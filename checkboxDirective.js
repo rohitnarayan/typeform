@@ -1,19 +1,39 @@
+"use strict";
 (function(){
 	var app = angular.module("app");
-		app.directive("checkboxDirective",function() {
+		app.directive("checkboxDirective",function($rootScope,$window,compareDataService) {
 			return {
 				restrict : "E",
 				scope : {
 					option: '=option'
 				},
 				controller:"appController",
-				template : "<input ng-keyup='onKeyUp($event)' type='checkbox' id='checkbox' name='checkbox'><label for='checkbox'>{{option}}</label>",
+				transclude:true,
+				templateUrl : "checkboxTemplate.html",
 				controller : "appController",
 				link : function(scope,element,attrs,controller) {
-					element.bind("mouseenter",function(){
-						console.log(scope.option);
-						controller.optionAt = scope.option;
-					});
+
+					// element[0].children.checkbox.focus();
+
+					// compareDataService.option = scope.option;
+					// console.log(compareDataService);
+
+
+					// compareDataService.option = scope.option;
+
+					// if(compareDataService.option.charCodeAt(0) == compareDataService.code){
+					// 	if(element[0].children.checkbox.checked) {
+					// 		element[0].children.checkbox.checked=false;
+					// 	}
+					// 	else {
+					// 		element[0].children.checkbox.checked=true;
+					// 	}
+					// }
+
+					// console.log(compareDataService);
+					// element.bind("mouseenter",function(){
+					// 	$rootScope.option = scope.option;
+					// });
 				}
 			}
 		});

@@ -4,18 +4,119 @@
 	<meta charset="UTF-8">
 	<title>App</title>
 </head>
-<body ng-controller="appController">
-
-
-<checkbox-directive option="options[0]" data-window-keyCode="keyCode"></checkbox-directive>
+<body ng-controller="appController as vm">
 
 <br>
-
-<checkbox-directive option="options[1]" data-window-keyCode="keyCode"></checkbox-directive>
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 <br>
 
-<checkbox-directive option="options[2]" data-window-keyCode="keyCode"></checkbox-directive>
+
+<div class="testing" in-view="$inview&&vm.cacheDom($inview,$inviewInfo)" in-view-options="{ generateParts: true }">
+	<checkbox-directive data-element-type="checkbox" option="vm.options[0]"></checkbox-directive>
+
+	<checkbox-directive data-element-type="checkbox" option="vm.options[1]"></checkbox-directive>
+
+	<checkbox-directive data-element-type="checkbox" option="vm.options[2]"></checkbox-directive>
+
+	<!-- <button ng-if="showButtonThresholdValue != 0">Hit Enter</button> {{showButtonThresholdValue}} -->
+</div>
 
 <script src="assets/js/angular.min.js"></script>
 <script src="assets/js/angular-messages.min.js"></script>
@@ -23,6 +124,7 @@
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/jquery.min.js"></script>
 <script src="./appController.js"></script>
+<script src="./compareDataService.js"></script>
 <script src="checkboxDataService.js"></script>
 <script src="checkboxDirective.js"></script>
 </body>

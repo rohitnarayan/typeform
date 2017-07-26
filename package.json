@@ -1,0 +1,22 @@
+{
+  "name": "typeform",
+  "version": "1.0.0",
+  "description": "",
+  "main": "appController.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rohitnarayan/typeform.git"
+  },
+  "author": "Rohit Jaiswal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rohitnarayan/typeform/issues"
+  },
+  "homepage": "https://github.com/rohitnarayan/typeform#readme",
+  "dependencies": {
+    "angular-inview": "^2.1.0"
+  }
+}
